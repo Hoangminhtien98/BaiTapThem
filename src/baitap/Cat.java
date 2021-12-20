@@ -2,9 +2,7 @@ package baitap;
 
 public class Cat extends Animal implements AnimalFunction {
     private int speed;
-    public void eat(){
-        System.out.println("Nhoàm nhoàm");
-    }
+
 
     public Cat() {
     }
@@ -12,6 +10,15 @@ public class Cat extends Animal implements AnimalFunction {
     public Cat(String name, double weight, int age, int speed) {
         super(name, weight, age);
         this.speed = speed;
+    }
+    public void eat(Mouse mouse){
+        System.out.println("Ăn chuột:");
+        super.setWeight(super.getWeight() + mouse.getWeight());
+    }
+
+    @Override
+    public String toString() {
+        return (super.toString() + makeSound());
     }
 
     @Override

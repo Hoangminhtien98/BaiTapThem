@@ -6,10 +6,10 @@ public class Animal {
     private int age;
 
 
-    public Animal(){
+    public Animal() {
     }
 
-    public Animal(String name, double weight,int age) {
+    public Animal(String name, double weight, int age) {
         this.name = name;
         this.weight = weight;
         this.age = age;

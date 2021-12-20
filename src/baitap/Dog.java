@@ -18,6 +18,11 @@ public class Dog extends Animal implements AnimalFunction {
 
     @Override
     public String makeSound() {
-        return "Gâu gâu";
+        return "Chó kêu: Gâu gâu";
+    }
+
+    @Override
+    public String toString() {
+        return (super.toString() + makeSound());
     }
 }
